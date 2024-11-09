@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  color: #fff;
+  background-color: rgb(31, 4, 56);
+  font-family: Arial, sans-serif;
+  line-height: 20px;
+}
+
+/* MISC */
+.sep{
+    background-color: rgb(65, 7, 119);
+    padding: 10px;
+}
+.section {
+    padding: 50px;
+    text-align: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+button{
+  background-color: lightskyblue;
+  padding: 5px;
+  border-radius: 5%;
+  border: none;
+  margin-top: 5px;
+  transition: all 0.3s ease-out;
+}
+button:hover{
+  background-color: lightblue;
+  padding: 5px 20px 5px 20px;
+}
+/* TOP NAV*/
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  z-index: 1000;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+.hero-content {
+position: relative;
+z-index: 1;
+text-align: center;
+color: white;
+margin: 0 auto;
+}
+.hero h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+  z-index: 10;
+  opacity: 0;
+  animation: float-up 2s ease-out forwards;
+}
+.hero p {
+  font-size: 1.5em;
+  z-index: 10;
+  opacity: 0;
+  animation: float-up 4s ease-out forwards;
+}
+
+@keyframes float-up {
+    0% {
+    transform: translateY(30px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+    }
+
+footer{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+.divlist{
+margin: 20px 25% 0 25% ;
+}
+.li{
+margin-top: 5px;
+}
+.video-background {
+position: absolute;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+object-fit: cover;
+z-index: 0; /* Video behind text */
+}
+iframe{
+  border: 5px solid;
+  border-color: rgb(83, 21, 141);
+  margin: 15px;
+  transition: all 0.3s ease-out;
+}
+iframe:hover{
+  transform: scale(1.1);
+}
